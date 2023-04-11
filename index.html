@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/estilo.css">
+    <title>Empleados</title>
+</head>
+<body>
+    <h2>Registro de Empleados</h2>
+    <hr>
+    <form action="index.php" method="POST">
+        <label for="nombre">Nombre</label>
+        <input type="text" name="nombre" id="nombre" placeholder="Nombre" required>
+        <br>
+        <label for="apellido">Apellido</label>
+        <input type="text" name="apellido" id="apellido" placeholder="Apellido" required>
+        <br>
+        <label for="edad">Edad</label>
+        <input type="number" name="edad" id="edad" placeholder="Edad" required>
+        <br>
+        <label for="cargo">Cargo</label>
+        <input type="text" name="cargo" id="cargo" placeholder="Cargo" required>
+        <br>
+        <label for="salario">Salario</label>
+        <input type="number" name="salario" id="salario" placeholder="Salario" required>
+       
+        <br>
+        <br>
+        <button onclick="agregarEmpleado()">Cargar empleado</button>
+        <br>
+        <br>
+        <button onclick="mostrarEmpleados()">Mostrar Empleados</button>
+    </form>
+    
+    <script src="./assets/js/main.js"></script>
+    
+</body>
+</html>
